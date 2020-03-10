@@ -4,8 +4,31 @@
     box-sizing: border-box;
     font-family: 'Poppins', Arial, sans-serif;
 }
+a {
+    text-decoration: none;
+}
+h2,h3 {
+    color: rgba(0,0,0,.8);
+}
+.btn {
+    padding: 10px 30px; 
+    border-radius: 3px;
+}
+.btn-primary {
+    background-color: #0d98ce;
+    border:1px solid #0d98ce;
+    color: #fff;
+}
+.btn-secondary {
+    background-color: #46cc6e;
+    border:1px solid #46cc6e;
+    color: #fff;
+}
 body {
     font-size: 16px;
+    font-weight: 400;
+    color: gray;
+    line-height: 1.8;
 }
 .container {
     max-width: 1140px;
@@ -46,15 +69,17 @@ body {
     max-width: 50%;
 }
 .content-banner h2,
-.content-banner h1,
-.content-banner p {
+.content-banner h1 {
     margin-bottom: 15px;
+}
+.content-banner p {
+    margin-bottom: 25px;
 }
 .content-banner h2 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 800;
-    color: #158acd;
+    color: #0d98ce;
 }
 .content-banner h1 {
     color: #fff;
@@ -65,12 +90,60 @@ body {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.7);
 }
-.content-banner .btn {
-    background-color: #158acd;
-    border-radius: 3px;
-    border:1px solid #158acd;
-    color: #fff;
-    padding: 20px 30px;
+
+/* Services */
+.services-general {
+    display: flex;
+    padding-bottom: 200px;
+}
+.services-about {
+    padding-top: 50px;
+    flex: 0 0 25%;
+}
+.services-about h3 {
+    font-size: 16px;
+    color: #10417c;
+}
+.services-about h2,
+.services-about p {
+    margin-bottom: 25px;
+}
+.services-about h2 {
+    font-size: 23px;
+    font-weight: 700;
+}
+.budget {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.services-itens {
+    display: flex;
+    padding-top: 60px;
+}
+.item-service {
+   text-align: center;
+   background-color:#fff;
+   padding: 20px;
+   border-radius: 4px;
+   margin: 0px 15px;
+   box-shadow: 0 15px 34px -10px rgba(0,0,0,.09);
+}
+.item-service h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.icon-service {
+    display: flex;
+    border-radius: 50%;
+    background: rgba(0,0,0,.05);
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Banner Articles */
